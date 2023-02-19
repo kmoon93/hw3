@@ -1,0 +1,18 @@
+<%= form_with :model => @post do |form| %>
+  <p>
+    <%= form.label "title" %>
+    <%= form.text_field "title" %>
+  </p>
+
+<p>
+    <%= form.label "long description" %>
+    <%= form.text_field "long description" %>
+  </p>
+
+<p>
+    <%= form.label "date" %>
+    <%= form.text_field "date" %>
+  </p>
+
+  <%= form.submit %>
+<% end %>
