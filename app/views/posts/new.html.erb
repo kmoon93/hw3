@@ -1,18 +1,17 @@
 <%= form_with :model => @post do |form| %>
   <p>
-    <%= form.label "title" %>
+    <%= form.label "title", "Title Post" %>
     <%= form.text_field "title" %>
   </p>
 
 <p>
-    <%= form.label "long description" %>
+    <%= form.label "long description", "Description" %>
     <%= form.text_field "long description" %>
   </p>
 
 <p>
-    <%= form.label "date" %>
+    <%= form.label "date", "Posted Date" %>
     <%= form.text_field "date" %>
   </p>
 
-  <%= form.submit %>
 <% end %>
